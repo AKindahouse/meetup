@@ -1,0 +1,53 @@
+dragon1 = "Go shopping"
+dragon2 = "Do an outdoor activity"
+dragon3 = "Stay at home and sleep alot"
+
+# Start the game
+print("How will you spend your time off from work?")
+print(f"1. {dragon1}")
+print(f"2. {dragon2}")
+print(f"3. {dragon3}")
+
+dragon = input("Type in selected NUMBER: ")
+
+# If you chose Shopping
+if dragon == "1":
+    print("What will you shop for:")
+    print("1. Food and drink")
+    print("2. Clothes")
+    print("3. DVD and music")
+
+    dragon1_action = input("Type number > ")
+
+    if dragon1_action == "1":
+        print("You`re a foodie!")
+    elif dragon1_action == "2":
+        print("You are materialistic!")
+    elif dragon1_action == "3":
+        print("You`re a movie fanatic!")
+    else:
+        print("Incorrect input, the program will now terminate as you did not input a number between 1 to 3")        
+        
+# If you chose to do an outdoor activity 
+elif dragon == "2":
+    print("What specific activity will you do?")
+    print("1. Trekking up a mountain")
+    print("2. Go for a jog or a run")
+    print("3. Go fishing")
+
+    dragon2_action = input("Type number > ")
+
+    if dragon2_action == "1":
+        print("You enjoy spending time in nature")
+    elif dragon2_action == "2":
+        print("You enjoy keeping fit")
+    elif dragon2_action == "3":
+        print("You like fishes!")
+    else:
+        print("Incorrect input, the program will now terminate as you did not input a number between 1 to 3") 
+        
+# If you chose to sleep
+elif dragon == "3":
+    print("Sleeping maybe fun but you should maximise your spare time to have a more fulfilling life.")
+else:
+  print("Incorrect input, the program will now terminate as you did not input a number between 1 to 3")
